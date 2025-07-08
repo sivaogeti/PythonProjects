@@ -1,4 +1,4 @@
-# TextExtractionFromEmbeddedImage
+# Text Extraction From Embedded Image (#TextExtractionFromEmbeddedImage)
 
 This project extracts text (including multilingual support like Telugu) from embedded images (JPG, PNG, PDF), detects language, and exports the result into a PDF using OCR.
 
