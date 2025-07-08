@@ -1,9 +1,0 @@
-pdf2image
-pytesseract
-pillow
-reportlab
-langdetect
-ocrmypdf
-PyPDF2
-pylint
-bandit
