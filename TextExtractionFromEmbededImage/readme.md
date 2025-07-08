@@ -69,24 +69,6 @@ python app.py
 
 ---
 
-## 💡 Final Recommendation
-
-Keep all listed dependencies in your `requirements.txt` for a production-grade setup with multilingual OCR, clean PDF export, and code quality assurance.
-
----
-
-### 🧾 Want a minimal version?
-
-If you're looking for a smaller footprint:
-
-```text
-pdf2image
-pytesseract
-pillow
-langdetect
-```
-
----
 
 ## 📁 File Structure (Optional Example)
 
@@ -102,3 +84,16 @@ TextExtractionFromEmbeddedImage/
 ---
 
 📌 _For best results, ensure your Tesseract supports the target language (`tel.traineddata` for Telugu, etc.)._
+
+
+## 🚀 How to Execute
+Follow these steps to check code quality, perform security validation, and run the application:
+
+✅ Step 1: Style & Code Quality Check
+pylint app.py
+
+🔒 Step 2: Security Audit
+bandit app.py
+
+🧠 Step 3: Run the OCR Pipeline
+python app.py

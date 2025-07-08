@@ -1,6 +1,7 @@
 """
 app.py: Extracts text from embedded images in PDFs using Tesseract OCR.
 """
+import os
 import sys
 import ocrmypdf
 import pytesseract
@@ -13,8 +14,13 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tess
 # Input/Output configuration
 # -------------------------------
 INPUT_PDF = "data/temp.pdf"         # 📝 Your input PDF with embedded Telugu + English text
-OUTPUT_PDF = "data/output_ocr.pdf"   # 📝 OCR searchable PDF
-TEMP_OUTPUT_TXT = "output_text.txt"  # Optional plain text output (post-processing)
+OUTPUT_PDF = "output/output_ocr.pdf"   # 📝 OCR searchable PDF
+TEMP_OUTPUT_TXT = "output/output_text.txt"  # Optional plain text output (post-processing)
+
+#-------------------------------
+#Creating output directory
+#--------------------------------
+os.makedirs("output", exist_ok=True)
 
 # -------------------------------
 # Run OCRmyPDF
